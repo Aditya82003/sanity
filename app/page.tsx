@@ -1,10 +1,11 @@
+import Hero from "@/section/Hero";
 import { FC } from "react";
 
 const Home:FC=()=> {
   return (
-    <>
-    <div>Hello</div>
-    </>
+    <main>
+      <Hero/>
+    </main>
   );
 }
 export default Home
