@@ -14,7 +14,7 @@ const Hero:FC = () => {
           <div className='flex flex-col sm:flex-row gap-4'>
           <Button variant='primary'>Start Building</Button>
           <Button variant='secondary'>Book a Demo</Button>
-          
+          <Button variant='secondary'>Book a Demo</Button>
           </div>
         </div>
     </section>
