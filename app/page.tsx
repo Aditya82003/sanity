@@ -1,3 +1,4 @@
+import Button from "@/components/Button";
 import Hero from "@/section/Hero";
 import { FC } from "react";
 
