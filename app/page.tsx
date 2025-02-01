@@ -1,5 +1,5 @@
 import Hero from "@/section/Hero";
-import PlatformOverview from "@/section/platformOverview";
+import PlatformOverview from "@/section/PlatformOverview";
 import { FC } from "react";
 
 const Home:FC=()=> {
