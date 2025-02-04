@@ -86,9 +86,36 @@ const PlatformOverview: FC = () => {
         </div>
 
       </div>
-      <h1 className='text-5xl sm:text-7xl font-normal text-white mt-64 tracking-tighter'>Welcome to the Composable Era</h1>
-      <div>
-        
+      <h1 className='text-5xl sm:text-7xl font-normal text-white mt-64 tracking-tighter mb-16'>Welcome to the Composable Era</h1>
+      <div className='flex max-sm:flex-col gap-4 justify-center px-4'>
+        <div className='flex flex-col gap-8 bg-[rgb(19,20,27)] p-6 text-white max-w-[450px] text-start hover:bg-gray-900 transition delay-150'>
+          <div>
+            <h4 className='text-2xl font-bold'>Exceed</h4>
+            <p className='text-2xl'>customer expectation</p>
+          </div>
+          <div>
+            <p>Unleash your team&#8217;s creative expression to deliver experiences that drive customer engagement and sustain greater revenue.</p>
+          </div>
+        </div>
+        <div className='flex flex-col gap-8 bg-[rgb(19,20,27)] p-6 text-white max-w-[450px] text-start  hover:bg-gray-900 transition delay-150'>
+          <div>
+            <h4 className='text-2xl font-bold text-[rgb(243,100,88)]'>Level up</h4>
+            <p className='text-2xl'>content velocity</p>
+          </div>
+          <div>
+            <p>Centralize content for stakeholders across your business to resolve silos, maximize reuse, and ensure trustworthy content.</p>
+          </div>
+        </div>
+        <div className='flex flex-col gap-8 bg-[rgb(19,20,27)] p-6 text-white max-w-[450px] text-start  hover:bg-gray-900 transition delay-150'>
+          <div>
+            <h4 className='text-2xl font-bold text-[rgb(144,236,249)]'>Future-proof</h4>
+            <p className='text-2xl'>your enterprise</p>
+          </div>
+          <div>
+            <p>Adopt a truly composable content architecture that&#8217;s interoperable with tomorrow&#8217;s disruptive tech.</p>
+          </div>
+        </div>
+
       </div>
     </section >
   )
