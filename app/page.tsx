@@ -1,5 +1,6 @@
 import Hero from "@/section/Hero";
 import PlatformOverview from "@/section/PlatformOverview";
+import SanityUnlock from "@/section/SanityUnlock";
 import { FC } from "react";
 
 const Home:FC=()=> {
@@ -7,6 +8,7 @@ const Home:FC=()=> {
     <main>
       <Hero/>
       <PlatformOverview />
+      <SanityUnlock/>
     </main>
   );
 }
