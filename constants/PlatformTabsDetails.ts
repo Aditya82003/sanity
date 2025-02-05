@@ -1,5 +1,7 @@
 import { StaticImageData } from "next/image"
-
+import APIlogo from '@/assets/APIs.png';
+import StudioLogo from '@/assets/Studio.png';
+import ContentLogo from "@/assets/ContentLake.png";
 
 type Details ={
     id:string,
@@ -7,6 +9,7 @@ type Details ={
     content:string,
     points:string[],
     button:string,
+    image:StaticImageData
     
 }
 
@@ -17,6 +20,7 @@ export const PlatformTabs:Details[]=[
         content:"Sanity Studio provides content creators with tailored editing interfaces that match the unique ways content drives your business. Built as open-source, the Studio acts as a central hub for content creation and operations for your composable business.",
         points:["Deeply customizable content workspaces","Real-time collaboration and field-level history","Intelligent image cropping and scaling"],
         button:"Explore Sanity Studio",
+        image:StudioLogo
       
     },
     {
@@ -25,6 +29,7 @@ export const PlatformTabs:Details[]=[
         content:"Sanity APIs are the fabric of your composable content architecture. Integrate with best-in-breed technologies as they emerge to unleash innovation. Sync content between Content Lake and any source for unprecedented access, reuse, and efficiency.",
         points:["Precise, formulaic content query language","Customizable, serverless webhook payloads","Interoperable across your entire architecture"],
         button:"Explore Developer Docs",
+        image:APIlogo
    
     },
     {
@@ -33,6 +38,7 @@ export const PlatformTabs:Details[]=[
         content:"Sanity Content Lake unites your enterprise around a single source of content truth. Content is synced, treated as data, and stored as JSON, making it readily available to power scalable multi-experience customer engagement.",
         points:["Cloud-hosted and fully-managed","Intelligent caching and global CDN","Robust mutation and patching interfaces"],
         button:"Explore Content Lake",
+        image:ContentLogo
    
     }
 ] 

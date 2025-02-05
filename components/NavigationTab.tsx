@@ -1,5 +1,6 @@
 import React, { FC, useState } from 'react'
 import { PlatformTabs } from '@/constants/PlatformTabsDetails'
+import Image from 'next/image'
 
 const NavigationTab: FC = () => {
     const [tab, setTab] = useState<"Studio" | "APIs" | "Content Lake">("Studio")
@@ -17,13 +18,14 @@ const NavigationTab: FC = () => {
                     </button>
                 ))}
             </div>
-            <div>{PlatformTabs.map((item, index) => (<>
-                <h1 className={`text-white font-semibold text-4xl md:text-5xl my-10 ${tab === item.id ? "" : "hidden"}`}>{item.heading}</h1>
+            <div>{PlatformTabs.map((item,index) => (<>
+                <h1 key={index}  className={`text-white font-semibold text-4xl md:text-5xl my-10 ${tab === item.id ? "" : "hidden"}`}>{item.heading}</h1>
                 <div className='flex max-sm:flex-col-reverse justify-center gap-28'>
-                    <div>
+                    <div className='flex flex-col justify-between'>
                         <div className={`text-white max-w-[400px] text-start text-lg font-semibold ${tab === item.id ? "" : "hidden"}`}>{item.content}</div>
+                        <button className={`inline-block text-white border border-1 border-[rgb(37,40,55)]  hover:bg-[rgb(37,40,55)] max-w-[300px] p-4 rounded-md ${tab === item.id ? "" : "hidden"}`} >{item.button}</button>
                     </div> 
-                    <div className={` min-w-[300px] h-[400px] bg-white text-lg font-semibold ${tab === item.id ? "" : "hidden"}`}>image</div>
+                    <Image className={`  bg-white text-lg font-semibold ${tab === item.id ? "" : "hidden"}`} src={item.image.src} alt={item.id} width={600} height={600}/>
                 </div>
 
             </>
