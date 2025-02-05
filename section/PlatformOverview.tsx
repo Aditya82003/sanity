@@ -4,6 +4,7 @@ import React, { FC, useState } from 'react'
 import platformFirst from '@/assets/platformFirst.png'
 import platformSec from '@/assets/platformSec.png'
 import Image from 'next/image'
+import NavigationTab from '@/components/NavigationTab'
 
 const PlatformOverview: FC = () => {
   const [mouseOver, setMouseOver] = useState<boolean>(false)
@@ -11,7 +12,7 @@ const PlatformOverview: FC = () => {
   const sampleArray: number[] = Array.from({ length: 99 }, (_, i) => i + 1);
 
   return (
-    <section className='relative bg-black  py-20 text-center'>
+    <section className='relative bg-[rgb(13,14,18)]  py-20 px-4 text-center'>
       <h1 className='text-center font-bold text-3xl text-[rgb(235,120,109)]'>Platform Overview</h1>
       <h1 className='text-center my-1 text-white text-4xl lg:text-5xl xl:text-6xl  tracking-normal'>Sanity Content Operating System</h1>
       <Image className=' absolute hidden xl:block  right-0' src={platformFirst} height={600} alt="1image" />
@@ -58,7 +59,7 @@ const PlatformOverview: FC = () => {
             <p className='  text-white text-end'>
               Powerful and intuitive interfaces that are the fabric of your content operating system</p>
           </div>
-          <div className='max-sm:absolute top-[40%] left-[28%]  sm:mx-auto flex flex-row gap-1  flex-wrap  w-48 h-48 bg-black transition p-1 -z-20' style={{ transform: "rotateX(60deg) rotate(-45deg)" }}>
+          <div className='max-sm:absolute top-[40%] left-[28%]  sm:mx-auto flex flex-row gap-1  flex-wrap  w-48 h-48 bg-[rgb(13,14,18)] transition p-1 -z-20' style={{ transform: "rotateX(60deg) rotate(-45deg)" }}>
             {sampleArray.map((value, index) => {
               return <div className='h-2 w-2 bg-[rgb(110,118,131)] rounded-full m-[2px] hover:scale-[2]' key={index}></div>
             })}
@@ -66,26 +67,34 @@ const PlatformOverview: FC = () => {
           </div>
         </div>
         <div className=''>
-        <div className='absolute  top-[80%] left-[26%] sm:left-[38%] lg:left-[40%] xl:left-[45%] -z-30' >
-          <div className=' absolute w-48 h-48 left-[45%] bg-black rounded-3xl  z-[9]' style={{ transform: "rotateX(56deg) rotate(-45deg)" }}></div>
-          <div className=' absolute w-48 h-48 left-[45%] top-[10px] bg-[rgb(110,118,131)] rounded-3xl z-[8]' style={{ transform: "rotateX(56deg) rotate(-45deg)" }}></div>
-          <div className=' absolute w-48 h-48 left-[45%] top-[20px] bg-black rounded-3xl z-[7] ' style={{ transform: "rotateX(56deg) rotate(-45deg)" }}></div>
-          <div className=' absolute w-48 h-48 left-[45%] top-[30px] bg-[rgb(86,93,103)] rounded-3xl z-[6] ' style={{ transform: "rotateX(56deg) rotate(-45deg)" }}></div>
-          <div className=' absolute w-48 h-48 left-[45%] top-[40px] bg-black rounded-3xl z-[5] ' style={{ transform: "rotateX(56deg) rotate(-45deg)" }}></div>
-          <div className=' absolute w-48 h-48 left-[45%] top-[50px] bg-[rgb(63,67,74)] rounded-3xl z-[4] ' style={{ transform: "rotateX(56deg) rotate(-45deg)" }}></div>
-          <div className=' absolute w-48 h-48 left-[45%] top-[60px] bg-black rounded-3xl z-[3] ' style={{ transform: "rotateX(56deg) rotate(-45deg)" }}></div>
-          <div className=' absolute w-48 h-48 left-[45%] top-[70px] bg-[rgb(39,42,46)] rounded-3xl z-[2]' style={{ transform: "rotateX(56deg) rotate(-45deg)" }}></div>
-          <div className=' absolute w-48 h-48 left-[45%] top-[80px] bg-black rounded-3xl z-[1] ' style={{ transform: "rotateX(56deg) rotate(-45deg)" }}></div>
-          <div className=' absolute w-48 h-48 left-[45%] top-[90px] bg-[rgb(110,118,131)] rounded-3xl z-0 ' style={{ transform: "rotateX(56deg) rotate(-45deg)" }}></div>
-        </div>
-        <div className='absolute pl-8 left-[70%] xl:left-[60%] max-w-[300px]'>
+          <div className='absolute  top-[80%] left-[26%] sm:left-[38%] lg:left-[40%] xl:left-[45%] -z-30' >
+            <div className=' absolute w-48 h-48 left-[45%] bg-[rgb(13,14,18)] rounded-3xl  z-[9]' style={{ transform: "rotateX(56deg) rotate(-45deg)" }}></div>
+            <div className=' absolute w-48 h-48 left-[45%] top-[10px] bg-[rgb(110,118,131)] rounded-3xl z-[8]' style={{ transform: "rotateX(56deg) rotate(-45deg)" }}></div>
+            <div className=' absolute w-48 h-48 left-[45%] top-[20px] bg-[rgb(13,14,18)] rounded-3xl z-[7] ' style={{ transform: "rotateX(56deg) rotate(-45deg)" }}></div>
+            <div className=' absolute w-48 h-48 left-[45%] top-[30px] bg-[rgb(86,93,103)] rounded-3xl z-[6] ' style={{ transform: "rotateX(56deg) rotate(-45deg)" }}></div>
+            <div className=' absolute w-48 h-48 left-[45%] top-[40px] bg-[rgb(13,14,18)] rounded-3xl z-[5] ' style={{ transform: "rotateX(56deg) rotate(-45deg)" }}></div>
+            <div className=' absolute w-48 h-48 left-[45%] top-[50px] bg-[rgb(63,67,74)] rounded-3xl z-[4] ' style={{ transform: "rotateX(56deg) rotate(-45deg)" }}></div>
+            <div className=' absolute w-48 h-48 left-[45%] top-[60px] bg-[rgb(13,14,18)] rounded-3xl z-[3] ' style={{ transform: "rotateX(56deg) rotate(-45deg)" }}></div>
+            <div className=' absolute w-48 h-48 left-[45%] top-[70px] bg-[rgb(39,42,46)] rounded-3xl z-[2]' style={{ transform: "rotateX(56deg) rotate(-45deg)" }}></div>
+            <div className=' absolute w-48 h-48 left-[45%] top-[80px] bg-[rgb(13,14,18)] rounded-3xl z-[1] ' style={{ transform: "rotateX(56deg) rotate(-45deg)" }}></div>
+            <div className=' absolute w-48 h-48 left-[45%] top-[90px] bg-[rgb(110,118,131)] rounded-3xl z-0 ' style={{ transform: "rotateX(56deg) rotate(-45deg)" }}></div>
+          </div>
+          <div className='absolute pl-8 left-[70%] xl:left-[60%] max-w-[300px]'>
             <h5 className='hidden md:block max-w-[100px] text-white bg-[rgb(19,20,27)] hover:bg-gray-800 px-4 py-2 rounded-full tracking-tighter font-semibold mb-4 '>Content</h5>
             <p className='hidden md:block  text-white text-start '>  A fully customizable content workspace that mirrors your business and unleashes velocity and creativity.</p>
           </div>
-              
+
         </div>
 
       </div>
+
+
+
+      <div className=' min-h-[600px] mt-44'>
+        <NavigationTab />
+      </div>
+
+
       <h1 className='text-5xl sm:text-7xl font-normal text-white mt-64 tracking-tighter mb-16'>Welcome to the Composable Era</h1>
       <div className='flex max-sm:flex-col gap-4 justify-center px-4'>
         <div className='flex flex-col gap-8 bg-[rgb(19,20,27)] p-6 text-white max-w-[450px] text-start hover:bg-gray-900 transition delay-150'>
