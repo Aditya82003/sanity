@@ -30,7 +30,7 @@ const NavigationTab: FC = () => {
                             </div>
                             
                         </>))}</div>
-                        <button className={`inline-block max-md:mt-12 mt-4 text-white border border-1 border-[rgb(37,40,55)]  hover:bg-[rgb(37,40,55)] max-w-[300px] p-4 rounded-md ${tab === item.id ? "" : "hidden"}`} >{item.button}</button>
+                        <button className={`inline-block max-md:mt-12 mt-4 text-white border border-1 border-[rgb(37,40,55)] font-bold hover:bg-[rgb(37,40,55)] max-w-[300px] p-4 rounded-md ${tab === item.id ? "" : "hidden"}`} >{item.button}</button>
                     </div> 
                     <Image  className={`  bg-white text-lg font-semibold ${tab === item.id ? "" : "hidden"}`} src={item.image} width={600} alt={item.id} />
                 </div>

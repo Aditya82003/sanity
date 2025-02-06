@@ -1,6 +1,6 @@
 import Hero from "@/section/Hero";
 import PlatformOverview from "@/section/PlatformOverview";
-import SanityUnlock from "@/section/SanityUnlock";
+import SanityUnlock from "@/section/FutureUnlock";
 import { FC } from "react";
 
 const Home:FC=()=> {
