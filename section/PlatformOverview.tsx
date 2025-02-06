@@ -90,12 +90,12 @@ const PlatformOverview: FC = () => {
 
 
 
-      <div className=' min-h-[600px] mt-44'>
+      <div className=' min-h-[600px] my-44'>
         <NavigationTab />
       </div>
 
 
-      <h1 className='text-5xl sm:text-7xl font-normal text-white mt-64 tracking-tighter mb-16'>Welcome to the Composable Era</h1>
+      <h1 className='text-5xl sm:text-7xl font-normal text-white mt-48 tracking-tighter mb-16'>Welcome to the Composable Era</h1>
       <div className='flex max-sm:flex-col gap-4 justify-center px-4'>
         <div className='flex flex-col gap-8 bg-[rgb(19,20,27)] p-6 text-white max-w-[450px] text-start hover:bg-[rgb(37,40,55)] transition delay-150'>
           <div>
