@@ -16,7 +16,7 @@ const Hero: FC = () => {
           <Button variant='primary'>Start Building</Button>
           <Button variant='secondary'>Book a Demo</Button>
         </div>
-        <h5 className='text-center my-10 tracking-widest font-thin'><span className=' inline-block w-8 h-8 p-1 text-[rgb(113,239,241)] mr-5 font-semibold text-lg rounded-full'> &#36;</span>npm create sanity@latest</h5>
+        <p className='text-center my-10 tracking-widest font-thin'><span className=' inline-block w-8 h-8 p-1 text-[rgb(113,239,241)] mr-5 font-semibold text-lg rounded-full'> &#36;</span><code>npm create sanity@latest</code></p>
       </div>
       <div className='mx-auto sm:w-5/6  overflow-hidden py-2  '>
       <HorizontalMarquee/>
