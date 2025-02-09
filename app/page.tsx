@@ -3,6 +3,7 @@ import PlatformOverview from "@/section/PlatformOverview";
 import SanityUnlock from "@/section/FutureUnlock";
 import { FC } from "react";
 import Makemagic from "@/section/Makemagic";
+import Sales from "@/section/Sales";
 
 const Home:FC=()=> {
   return (
@@ -10,7 +11,8 @@ const Home:FC=()=> {
       <Hero/>
       <PlatformOverview />
       <SanityUnlock/>
-      <Makemagic/>
+      <Sales/>
+      {/* <Makemagic/> */}
     </main>
   );
 }
