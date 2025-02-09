@@ -12,7 +12,7 @@ const Home:FC=()=> {
       <PlatformOverview />
       <SanityUnlock/>
       <Sales/>
-      {/* <Makemagic/> */}
+      <Makemagic/>
     </main>
   );
 }

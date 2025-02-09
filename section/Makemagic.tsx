@@ -43,13 +43,6 @@ const Makemagic: FC = () => {
                         <Image className='scale-150 hover:scale-105 transition' src={image8} alt='image8' />
                     </div>
                 </div>
-                {/* <Image src={image2} alt='image2' height={200} />
-                <Image src={image3} alt='image3' height={200} />
-                <Image src={image5} alt='image5' height={200} />
-                <Image src={image6} alt='image6' height={200} />
-                <Image src={image7} alt='image7' height={200} />
-                <Image src={image8} alt='image8' height={200} /> */}
-
             </div>
         </div>
     )
