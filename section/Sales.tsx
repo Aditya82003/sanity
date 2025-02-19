@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 
 const Sales: FC = () => {
     return (
-        <section className=' flex  flex-col items-center max-sm:items-start  bg-[rgb(13,14,18)] text-white py-20 px-4 gap-8'>
+        <section className=' flex  flex-col items-center max-sm:items-start  bg-[rgb(13,14,18)] text-white py-20 px-4 gap-8 '>
             <div className='flex flex-col items-start md:items-center'>
                 <h1 className='text-[rgb(247,119,105)] text-3xl font-bold'>Built for the enterprise</h1>
                 <h1 className='text-4xl  tracking-tight'>Embrace complexity with composability</h1>
@@ -27,18 +27,18 @@ const Sales: FC = () => {
                 </div>
 
             </div>
-            <div className='flex flex-wrap justify-center  gap-4'>
-                <div className='w-[400px] bg-[rgb(19,20,27)] p-4 rounded-sm font-bold text-xl'>
+            <div className='flex flex-wrap justify-center  gap-4 overflow-hidden'>
+                <div className='w-full sm:w-[400px] bg-[rgb(19,20,27)] p-4 rounded-sm font-bold text-xl'>
                     <p className='text-[rgb(143,147,167)] font-medium'>G2 2023 Ranking</p>
                     <p className='text-[rgb(247,119,105)]'>Leader of CMS</p>
                     <p className='mt-8 text-sm'>Reade Reviews</p>
                 </div>
-                <div className='w-[400px] bg-[rgb(19,20,27)] p-4 rounded-sm font-bold text-xl'>
+                <div className='w-full sm:w-[400px] bg-[rgb(19,20,27)] p-4 rounded-sm font-bold text-xl'>
                     <p className='text-[rgb(143,147,167)] font-medium'>State of Web Development 2023</p>
                     <p className='text-[rgb(247,119,105)]'>Highest satisfaction scrore of any CMS</p>
                     <p className='mt-8 text-sm'>open report</p>
                 </div>
-                <div className='w-[400px] bg-[rgb(19,20,27)] p-4 rounded-sm font-bold text-xl'>
+                <div className=' w-full sm:w-[400px] bg-[rgb(19,20,27)] p-4 rounded-sm font-bold text-xl'>
                     <p className='text-[rgb(143,147,167)] font-medium'>SOC 2 Type 2</p>
                     <p className='text-[rgb(247,119,105)]'>High secruity complaint</p>
                     <p className='mt-8 text-sm'>view complaince</p>
